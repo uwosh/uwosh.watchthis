@@ -1,0 +1,12 @@
+li#document-action-watchthis a:click{
+evt-click-allowbubbling: True;
+evt-click-preventdefault: True;
+action-server: KSStoggle;
+action-client: log;
+log-message: 'doc action watchthis click';
+}
+
+li#document-action-watchthis:load{
+action-server: setWatchThisTitle;
+}
+

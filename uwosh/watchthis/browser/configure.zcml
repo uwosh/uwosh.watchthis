@@ -1,0 +1,44 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:browser="http://namespaces.zope.org/browser"
+    i18n_domain="uwosh.watchthis">
+
+	<browser:page
+		name="toggleWatching"
+		class=".watchOrStopWatching.WatchThis"
+		for="*"
+		permission="zope.Public"
+		attribute="toggleWatching"
+		/>
+
+	<browser:page
+		name="showWatchThisAction"
+		class=".watchOrStopWatching.WatchThis"
+		for="*"
+		permission="zope.Public"
+		attribute="showWatchThisAction"
+		/>
+
+	<browser:page
+		name="KSStoggle"
+		class=".watchThisKSSView.toggleWatchThisTitleKSS"
+		for="*"
+		permission="zope.Public"
+		attribute="KSStoggle"
+		/>
+
+	<browser:page
+		name="setWatchThisTitle"
+		class=".watchThisKSSView.toggleWatchThisTitleKSS"
+		for="*"
+		permission="zope.Public"
+		attribute="setWatchThisTitle"
+		/>
+		
+
+	<browser:resource
+		 file="watchThis.kss"
+    		 name="watchThis.kss"
+   		  />	
+
+</configure>

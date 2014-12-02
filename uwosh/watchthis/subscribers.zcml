@@ -1,0 +1,11 @@
+<configure
+          xmlns="http://namespaces.zope.org/zope"
+          xmlns:five="http://namespaces.zope.org/five">
+
+          <subscriber
+              for="Products.ATContentTypes.interface.IATDocument
+              zope.app.container.interfaces.IObjectModifiedEvent"
+              handler="uwosh.watchthis.browser.watchOrStopWatching.sendChangeEmail"
+              />
+
+</configure>

@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<import-steps>
+  <import-step id="uwosh.watchthis"
+               version="1"
+               handler="uwosh.watchthis.install.import_all"
+               title="uwosh.watchthis: miscellaneous import steps">
+    Create a document action entitled 'Watch This Page'
+	  <dependency step="content"/>
+  </import-step> 
+</import-steps>
